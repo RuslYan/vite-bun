@@ -1,16 +1,12 @@
-<script setup lang="ts">
-  import Nav from './components/Nav.vue'
-  import Main from './components/Main.vue'
-  import Footer from './components/Footer.vue'
-</script>
-
 <template>
-  <div class="flex flex-col p-5">
-    <Nav />
-    <Main />
-    <Footer />
-  </div>
+  <BaseLayout>
+    <RouterView></RouterView>
+  </BaseLayout>
 </template>
+
+<script setup lang="ts">
+import BaseLayout from './components/BaseLayout.vue'
+</script>
 
 <style lang="scss">
   @import url('./styles/index.scss');
